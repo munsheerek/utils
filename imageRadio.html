@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Image Radio Buttons</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <style>
+        html,body{
+            min-height: 100vh;
+            min-width: 100vw;
+        }
+        .parent{
+            height: 100vh;
+        }
+        .parent>.row{
+            display: flex;
+            align-items: center;
+            height: 100%;
+        }
+        .col img{
+            height:100px;
+            width: 100%;
+            cursor: pointer;
+            transition: transform 1s;
+            object-fit: cover;
+        }
+        .col label{
+            overflow: hidden;
+            position: relative;
+        }
+        .imgbgchk:checked + label>.tick_container{
+            opacity: 1;
+        }
+        .imgbgchk:checked + label>img{
+            transform: scale(1.25);
+            opacity: 0.3;
+        }
+        .tick_container {
+            transition: .5s ease;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            cursor: pointer;
+            text-align: center;
+        }
+        .tick {
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            padding: 6px 12px;
+            height: 40px;
+            width: 40px;
+            border-radius: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container parent">
+    <div class="row">
+        <div class='col text-center'>
+        <input type="radio" name="imgbackground" id="img1" class="d-none imgbgchk" value="">
+          <label for="img1">
+            <img src="https://dummyimage.com/600x400/000/fff" alt="Image 1">
+            <div class="tick_container">
+              <div class="tick"><i class="fa fa-check"></i></div>
+            </div>
+            </label>
+        </div>
+        <div class='col text-center'>
+        <input type="radio" name="imgbackground" id="img2" class="d-none imgbgchk" value="">
+          <label for="img2">
+            <img src="https://dummyimage.com/600x400/000/fff" alt="Image 2">
+            <div class="tick_container">
+              <div class="tick"><i class="fa fa-check"></i></div>
+            </div>
+          </label>
+        </div>
+        <div class='col text-center'>
+        <input type="radio" name="imgbackground" id="img3" class="d-none imgbgchk" value="">
+          <label for="img3">
+            <img src="https://dummyimage.com/600x400/000/fff" alt="Image 3">
+            <div class="tick_container">
+              <div class="tick"><i class="fa fa-check"></i></div>
+            </div>
+          </label>
+        </div>
+        <div class='col text-center'>
+        <input type="radio" name="imgbackground" id="img4" class="d-none imgbgchk" value="">
+            <label for="img4">
+              <img src="https://dummyimage.com/600x400/000/fff" alt="Image 4">
+              <div class="tick_container">
+                <div class="tick"><i class="fa fa-check"></i></div>
+              </div>
+            </label>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
