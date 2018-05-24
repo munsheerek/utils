@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .btn{
+            position:fixed;
+            width:60px;
+            height:60px;
+            bottom:40px;
+            right:40px;
+            background-color:#0C9;
+            color:#FFF;
+            border-radius: 1em;
+            text-align: center;
+            box-shadow: 2px 2px 3px #999;
+            border: none;
+            cursor: pointer;
+            outline: none;
+            transform: rotate(0deg);
+            transition: transform 0.9s;
+        }
+        .btn::before{
+            content : "+";
+            font-size: 40px;    
+        }
+        .btn.rotate{
+            transform: rotate(45deg);
+            transition: transform 0.9s;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="rotate()" class="btn" type="button"></button>    
+</body>
+<script>
+    function rotate(){
+        var self = document.querySelector('.btn');
+        self.classList.toggle('rotate');
+    }
+</script>
+</html>
