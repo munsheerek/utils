@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style>
+        footer{
+            border-right: 19px solid #ffffff;
+            border-bottom: 20px solid #ffffff;
+            border-left: 20px solid #ffffff;
+          }
+          
+          .rocimg{
+              max-width: 416px; 
+              height: auto;
+          }
+          
+          img.stupbanner{
+              max-width: 100%; 
+              height: auto;
+          }
+          
+          img.homeheader{
+              max-width: 400%;
+              height: 165px;
+          }
+          
+          img.cardimg{
+              max-width: 50px;
+              height: auto;
+          }
+          
+          img.extfrbanner{
+              max-width: 100%; 
+              height: auto;
+          }
+          
+          img.serfrbanner{
+              max-width: 100%; 
+              height: auto;
+          }
+          
+          div.cardbg{
+              background-image: url("../img/home.png");
+              padding-top: 50px;
+              padding-bottom: 50px;
+              padding-left: 250px;
+              padding-right: 250px;
+              border-right: 19px solid #ffffff;
+              border-left: 20px solid #ffffff;
+          }
+          
+          .frmedmainh1{
+              font-size: 2.5em;
+              font-weight: 700;
+              font-family: 'Raleway', sans-serif;
+              color: #000000;
+              text-transform: uppercase; 
+          }
+          
+          .frmedh1{
+              font-size: 2.5em;
+              font-weight: 700;
+              font-family: 'Raleway', sans-serif;
+              color: #000000;
+              text-transform: uppercase; 
+          }
+          
+          .frmedh2{
+              font-size:2em;
+              font-weight: 700;
+              font-family: 'Khand', sans-serif;
+              color: #000000;
+              text-transform: uppercase; 
+          }
+          
+          .frmednum{
+              font-size:1.6em;
+              font-weight: 700;
+              font-family: 'Khand', sans-serif;
+              color: #a8a8a8;
+              text-transform: uppercase; 
+          }
+          
+          .frmedp{
+              font-size: 1em;
+              font-weight: 400;
+              font-family: 'Raleway', sans-serif;
+              color: #000000;
+              text-align: justify;
+          }
+          
+          .frmedp2{
+              font-size: 1.2em;
+              font-weight: 400;
+              font-family: 'Khand', sans-serif;
+              color: #000000;
+              text-align: justify;
+          }
+          
+          .lgheader{
+              color: #5f0707;
+              font-weight: 700;
+              font-size: 2.7em;
+          }
+          
+          .fracent{
+              padding: 30px 150px;
+          }
+          
+          .fracent2{
+              padding: 0px 250px;
+          }
+          
+          .fracent3{
+              padding:20px 120px;
+          }
+          
+          .servimg{
+              max-width: 60px;
+              height: auto;
+          }
+          /* .homeicon1{
+              background-image: url("../franchiseicon/EXPERT TEAM.svg");
+              max-width: 195px;
+              height: 100px;
+              z-index: 1000;
+          } */
+          /* .homeicon2{
+              background-image: url("../franchiseicon/TAILORED SOLUTIONS.svg");
+              max-width: 195px;
+              height: 100px;
+              z-index: 1000;
+          } */
+          /* .homeicon3{
+              background-image: url("../franchiseicon/UNIQUE APPROACH.svg");
+              max-width: 195px;
+              height: 100px;
+              z-index: 1000;
+          } */
+          /* .homeicon4{
+              background-image: url("../franchiseicon/LONG TERM LIAISNG.svg");
+              max-width: 195px;
+              height: 100px;
+              z-index: 1000;
+          } */
+          
+          a>img.homeicon{
+              max-width: 195px;
+              height: auto;
+          }
+          
+          a.knowbtn{
+              background-color: #8bc53f;
+              font-weight: 600;
+              font-size: 0.8rem;
+              color: white;
+          }
+          
+          a.knowbtn:hover{
+              background-color: #8bc53f;
+              color: black;
+              font-size: 0.8rem;
+              font-weight: 700;
+          }
+          
+          hr{
+              height: 6px;
+          }
+          
+          i.tred{
+              color: #5f0707;
+          }
+          div.row>div#stuppad{
+              margin-top: 50px !important;
+              padding-top: 60px !important;
+          }
+          
+          div.row>div#extpad{
+              margin-top: 40px !important;
+              padding-top: 40px !important;
+          }
+          
+          @media screen and (max-width:536px){
+              div.row>div#stuppad{
+                  margin-top: 20px !important;
+                  padding-top: 20px !important;
+              }
+          }
+          
+          @media screen and (max-width:536px){
+              div.row>div#extpad{
+                  margin-top: 20px !important;
+                  padding-top: 20px !important;
+              }
+          }
+          
+          @media screen and (max-width:536px){
+              .fracent{
+                  /* margin-top: 20px !important; */
+                  padding: 0px !important;
+              }
+          }
+          
+          @media screen and (max-width:536px){
+              .fracent2{
+                  /* margin-top: 20px !important; */
+                  padding: 0px !important;
+              }
+          }
+          
+          @media screen and (max-width:536px){
+              .fracent3{
+                  /* margin-top: 20px !important; */
+                  padding: 0px !important;
+              }
+          }
+          
+          @media screen and (max-width:536px){
+              img.homeheader{
+                  max-width: 0%;
+                  height: 0px;
+              }
+          }
+          
+          @media screen and (max-width:536px){
+              a>img.homeicon{
+                  display:block;
+                  margin:auto;
+              }
+          }
+          
+          @media screen and (max-width:536px){
+              footer{
+                  border:0px;
+              }
+          }
+          
+          @media screen and (max-width:536px){
+              a.knowbtn{
+                  margin-bottom: 50px;
+              }
+          }
+          
+          @media screen and (max-width:536px){
+             div.cardbg{
+              background-image: url("../img/homepage.jpg");
+              padding-top: 20px;
+              padding-left: 0px;
+              padding-right: 0px;
+              display: block !important;
+              margin: 0 auto !important;
+              border-right: 0px solid #ffffff;
+              border-left: 0px solid #ffffff;
+              }   
+          }
+          
+          @media screen and (max-width:780px){
+             div.cardbg{
+              background-image: url("../img/homepage.jpg");
+              padding-top: 20px;
+              padding-left: 0px;
+              padding-right: 0px;
+              display: block !important;
+              margin: auto !important;
+              border-right: 0px solid #ffffff;
+              border-left: 0px solid #ffffff;
+              }   
+          }
+          
+          @media screen and (max-width:780px){
+             div.cardarrg{
+              margin-bottom: 35px;
+              padding-left: 0px;
+              padding-right: 0px;
+              display: block !important;
+              margin-left: auto !important;
+              margin-right: auto !important;
+              /* margin: auto !important; */
+              }   
+          }
+    </style>
+</head>
+<body>
+    <div class="container pt-5">
+        <div class="row pb-4">
+            <div class="col-xl-1 col-lg-1 col-md-1"></div>
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-xs-6">  
+                <div class="row">
+                    <div class="col-xl-1 col-lg-1 col-md-1">
+                        <img src="homeheading.png" alt="" class="homeheader">
+                    </div>
+                    <div class="col-xl-11 col-lg-11 col-md-11 col-sm-12 col-xs-12">
+                        <h1 class="thin-text">WHY</h1><h1 class="bold-text">FRANCHICE</h1><h1 class="thin-text">MEDIA</h1>
+                    </div>
+                </div>
+                <p class="frmedp pt-3">
+                    We are Franchise Media, a team of dynamic professionals with years of experience in franchise
+                    consulting and counselling business. Delivering high quality success strategies
+                    for every business - That’s our goal. We offer 360o solutions to the budding entrepreneurs as
+                    well as established players in the global business market.
+                </p>
+                <a href="aboutus.html" style="float:right;" class="btn knowbtn btn-sm">KNOW MORE...</a>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-2"></div>
+            <div class="col-xl-5 col-lg-5 col-md-5 col-sm-6 col-xs-6">
+                <div class="row">
+                    <a href="aboutus.html#expert">
+                        <img src="EXPERT-TEAM.svg" alt="Extert team"
+                            class="homeicon p-2">
+                    </a>
+                    <a href="aboutus.html#tailored">
+                        <img src="TAILORED-SOLUTIONS.svg" alt="Tailored Solutions"
+                            class="homeicon p-2">
+                    </a>              
+                </div>
+                <div class="row">
+                    <a href="aboutus.html#unique">
+                        <img src="UNIQUE-APPROACH.svg" alt="Unique Approach"
+                            class="homeicon p-2">
+                    </a>
+                    <a href="aboutus.html#longterm">
+                        <img src="LONG-TERM-LIAISNG.svg" alt="Longterm LIAISNG"
+                            lass="homeicon p-2">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

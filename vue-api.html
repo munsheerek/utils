@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #canvas {
+            height: 400px;
+            width: 400px;
+            border: solid 1px #000;
+        }
+    </style>
+</head>
+<body>
+    <div id="vue-api">
+        <h1>{{ title }}</h1>
+        <div id="canvas" v-on:mousemove="updateXY"> x:{{x}}, y: {{y}}</div>
+    </div>
+    <script src="https://unpkg.com/vue"></script>
+    <script>
+        new Vue({
+            el: '#vue-api',
+            data: {
+                title: 'Welcome to Vue Api',
+                x: 0,
+                y: 0
+            },
+            methods: {
+                updateXY: function(event){
+                    this.x = event.offsetX;
+                    this.y = event.offsetY;
+                }
+            }
+        });
+
+    </script>
+</body>
+</html>
